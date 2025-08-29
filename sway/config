@@ -18,7 +18,7 @@ set $term foot
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu dmenu_path | dmenu -l 10 -nf '#ffffff' -nb '#000000' -sb '#00a2ff' -sf '#ffffff' -i  | xargs swaymsg exec --
+set $menu wofi --style ~/.config/wofi/style.css --show drun --prompt run --allow-images -D key_expand=Tab | xargs swaymsg exec --
 set $lock swaylock -f -c 000000
 
 include /etc/sway/config-vars.d/*
@@ -27,7 +27,9 @@ include /etc/sway/config-vars.d/*
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 #output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-output * bg ~/Downloads/0e1273379d233208b3a8d8e7d50b2bbc.jpg fill
+#output * bg ~/Pictures/Wallpapers/2560x1440/wallhaven-pokjep.png fill
+output * bg ~/wallpaper fill
+
 #
 # Example configuration:
 #
@@ -71,14 +73,15 @@ input * {
 # Basics:
 #
 	bindsym $mod+p exec xfce4-screenshooter -s ~/Pictures/Screenshots
-    # Start a terminal
-    bindsym $mod+Return exec $term
 
-    # Kill focused window
-    bindsym $mod+Shift+q kill
+	# Start a terminal
+	bindsym $mod+Return exec $term
 
-    # Start your launcher
-    bindsym $mod+d exec $menu
+	# Kill focused window
+	bindsym $mod+Shift+q kill
+
+	# Start your launcher
+	bindsym $mod+d exec $menu
 
 	# Lock screen
 	bindsym $mod+l exec $lock
@@ -230,7 +233,7 @@ bar {
 # Autolock
 exec swayidle -w \
     timeout 180 '$lock' \
-    timeout 270 'swaymsg "output * dpms off"' \
+    timeout 360 'swaymsg "output * dpms off"' \
         resume 'swaymsg "output * dpms on"' \
     before-sleep '$lock'
 
