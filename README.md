@@ -12,3 +12,4 @@ This repository is just a list of my `.config` files so I can easily recreate my
 - swaylock
 - cava
 - neofetch
+- nsxiv

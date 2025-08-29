@@ -1,2 +1,3 @@
-image/jpeg=feh
-image/png=feh
+[Default Applications]
+image/jpeg=nsxiv.desktop
+image/png=nsxiv.desktop
