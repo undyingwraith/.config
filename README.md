@@ -9,3 +9,6 @@ This repository is just a list of my `.config` files so I can easily recreate my
 - wofi
 - swaybg
 - [gitui](https://github.com/gitui-org/gitui)
+- swaylock
+- cava
+- neofetch
