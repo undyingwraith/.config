@@ -227,7 +227,11 @@ exec swayidle -w \
 # General looks
 gaps inner 8
 default_border pixel 1
-
 client.focused #000000 #a200ff #ffffff
+
+# Notification Daemon
+exec swaync
+# Toggle control center
+bindsym $mod+Shift+n exec swaync-client -t -sw
 
 include /etc/sway/config.d/*
