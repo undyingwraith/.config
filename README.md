@@ -7,8 +7,9 @@ This repository is just a list of my `.config` files so I can easily recreate my
 - sway
 - waybar
 - wofi
-- swaybg
+- [azote](https://github.com/nwg-piotr/azote)
 - *[gitui](https://github.com/gitui-org/gitui)*
+- *[SourceGit](https://github.com/sourcegit-scm/sourcegit)*
 - swaylock
 - *cava*
 - *neofetch*
