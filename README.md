@@ -12,7 +12,7 @@ This repository is just a list of my `.config` files so I can easily recreate my
 - *[SourceGit](https://github.com/sourcegit-scm/sourcegit)*
 - swaylock
 - *cava*
-- *neofetch*
+- *fastfetch*
 - *imv*
 - [swaync](https://github.com/ErikReider/SwayNotificationCenter)
 
@@ -22,7 +22,8 @@ This repository is just a list of my `.config` files so I can easily recreate my
 | `super`+`enter` | Opens a new terminal (`foot`) |
 | `super`+`D` | Opens the application menu (`wofi`) |
 | `super`+`shift`+`Q` | Closes current window |
-| `super`+`shift`+`N` | Opens the notification center (`swaync`) |
+| `super`+`N` | Opens the notification center (`swaync`) |
+| `super`+`tab` | Opens task view |
 
 # Colors
 
@@ -44,3 +45,11 @@ This repository is just a list of my `.config` files so I can easily recreate my
 <div style="background-color: #b700ff">#b700ff</div>
 <div style="background-color: #89ddff">#89ddff</div>
 <div style="background-color: #eeffff">#eeffff</div>
+
+# Maintenance
+```bash
+# Remove old packages
+paccache -rk1
+# Remove orpaned packages
+sudo pacman -Rns $(pacman -Qdtq)
+```

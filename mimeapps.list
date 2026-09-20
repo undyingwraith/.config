@@ -15,6 +15,7 @@ x-scheme-handler/chrome=zen.desktop;
 x-scheme-handler/http=zen.desktop;
 x-scheme-handler/https=zen.desktop;
 x-scheme-handler/nxm=amethystmodmanager-nxm.desktop;
+x-scheme-handler/mailto=userapp-Evolution-64T2Q3.desktop
 
 [Added Associations]
 application/x-extension-htm=zen.desktop;
@@ -27,3 +28,6 @@ text/html=zen.desktop;
 x-scheme-handler/chrome=zen.desktop;
 x-scheme-handler/http=zen.desktop;
 x-scheme-handler/https=zen.desktop;
+text/x-python=org.xfce.mousepad.desktop;
+application/pdf=zen.desktop;org.inkscape.Inkscape.desktop;
+x-scheme-handler/mailto=userapp-Evolution-64T2Q3.desktop;

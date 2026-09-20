@@ -1,0 +1,45 @@
+// Place your key bindings in this file to override the defaults
+[
+	{
+		"key": "ctrl+y",
+		"command": "editor.action.deleteLines",
+		"when": "textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+shift+k",
+		"command": "-editor.action.deleteLines",
+		"when": "textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+y",
+		"command": "-redo"
+	},
+	{
+		"key": "alt+enter",
+		"command": "editor.action.autoFix",
+		"when": "textInputFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)quickfix\\b/"
+	},
+	{
+		"key": "shift+alt+oem_period",
+		"command": "-editor.action.autoFix",
+		"when": "textInputFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)quickfix\\b/"
+	},
+	{
+		"key": "ctrl+alt+o",
+		"command": "editor.action.organizeImports",
+		"when": "textInputFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
+	},
+	{
+		"key": "shift+alt+o",
+		"command": "-editor.action.organizeImports",
+		"when": "textInputFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
+	},
+	{
+		"key": "shift+alt+o",
+		"command": "workbench.action.remote.showMenu"
+	},
+	{
+		"key": "ctrl+alt+o",
+		"command": "-workbench.action.remote.showMenu"
+	}
+]

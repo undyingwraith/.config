@@ -1,0 +1,27 @@
+{
+	"editor.renderWhitespace": "all",
+	"editor.formatOnSave": true,
+	"git.confirmSync": false,
+	"git.autofetch": true,
+	"editor.detectIndentation": false,
+	"editor.insertSpaces": false,
+	"js/ts.format.semicolons": "insert",
+	"files.insertFinalNewline": true,
+	"files.enableTrash": false,
+	"js/ts.preferences.importModuleSpecifierEnding": "minimal",
+	"js/ts.preferences.quoteStyle": "single",
+	"debug.javascript.autoAttachFilter": "disabled",
+	"yaml.format.singleQuote": true,
+	"telemetry.telemetryLevel": "off",
+	"chat.disableAIFeatures": true,
+	"yaml.disableSchemaDetection": [
+		"**/.github/workflows/*.yml",
+		"**/.github/workflows/*.yaml",
+		"**/.gitea/workflows/*.yml",
+		"**/.gitea/workflows/*.yaml",
+		"**/.forgejo/workflows/*.yml",
+		"**/.forgejo/workflows/*.yaml"
+	],
+	"diffEditor.ignoreTrimWhitespace": false,
+	"git.blame.editorDecoration.enabled": true
+}

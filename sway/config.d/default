@@ -41,6 +41,9 @@ bindsym {
     # Start your launcher
     $mod+d exec $launcher
 
+    # Notification center
+    $mod+n exec swaync-client -t -sw
+
     # Menu
     $mod+Shift+d exec $menu
 
@@ -131,7 +134,7 @@ bindsym {
     # Split the window vertically
     $mod+v splitv
     # Split the window horizontally
-    $mod+Shift+v splith
+    $mod+h splith
 
     # Switch the current container between different layout styles
     $mod+Shift+s layout stacking

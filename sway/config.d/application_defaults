@@ -41,3 +41,6 @@ for_window [title="sway_config"] floating enable, resize set width 80 ppt height
 for_window [app_id="librewolf"] inhibit_idle fullscreen
 for_window [app_id="Chromium"] inhibit_idle fullscreen
 for_window [app_id="zen"] inhibit_idle fullscreen
+
+# Start games on desktop 1
+assign [app_id="gamescope"] 1

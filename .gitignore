@@ -1,9 +1,15 @@
 /*
-!.gitignore
-!gitconfig
-!sway
-!waybar
-!wofi
-!mimeapps.list
-!cava
-!neofetch
+!/.gitignore
+!/gitconfig
+!/sway
+!/waybar
+!/wofi
+!/mimeapps.list
+!/cava
+
+!/Code - OSS
+/Code - OSS/*
+!/Code - OSS/User
+/Code - OSS/User/*
+!/Code - OSS/User/settings.json
+!/Code - OSS/User/keybindings.json
