@@ -1,12 +1,26 @@
-require('config.options')
 require('config.keybinds')
+require('config.lsp')
+require('config.options')
+require('config.statusline')
+require('config.theme')
 
-local function make_transparent()
-  local groups = {'Normal', 'NormalNC', 'NormalFloat', 'SignColumn',
-                  'StatusLine', 'StatusLineNC', 'EndOfBuffer'}
-  for _, group in ipairs(groups) do
-    vim.api.nvim_set_hl(0, group, { bg = 'NONE', ctermbg = 'NONE' })
-  end
-end
+--require('plugins.config')
 
-make_transparent()
+--[[
+vim.api.nvim_create_autocmd('FileType', {
+      -- This handler will fire when the buffer's 'filetype' is "python"
+      pattern = 'python',
+      callback = function(ev)
+        vim.lsp.start({
+          name = 'my-server-name',
+          cmd = {'name-of-language-server-executable', '--option', 'arg1', 'arg2'},
+
+          -- Set the "root directory" to the parent directory of the file in the
+          -- current buffer (`ev.buf`) that contains either a "setup.py" or a
+          -- "pyproject.toml" file. Files that share a root directory will reuse
+          -- the connection to the same LSP server.
+          root_dir = vim.fs.root(ev.buf, {'cargo.toml'}),
+        })
+      end,
+    })
+]]
