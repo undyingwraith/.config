@@ -27,6 +27,7 @@ vim.opt.showmatch = true
 vim.opt.matchtime = 2
 vim.opt.cmdheight = 1
 vim.opt.completeopt = "menuone,noinsert,noselect"  -- Completion options
+vim.opt.pumheight = 10
 vim.opt.showmode = false
 
 -- Whitespace display
