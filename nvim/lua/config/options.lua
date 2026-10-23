@@ -26,9 +26,11 @@ vim.opt.signcolumn = 'no'
 vim.opt.showmatch = true
 vim.opt.matchtime = 2
 vim.opt.cmdheight = 1
-vim.opt.completeopt = "menuone,noinsert,noselect"  -- Completion options
-vim.opt.pumheight = 10
+vim.opt.completeopt = { 'menu', 'menuone', 'noinsert', 'popup', 'fuzzy' } -- Completion options
 vim.opt.showmode = false
+vim.opt.pumheight = 10
+vim.opt.pumblend = 10
+vim.opt.lazyredraw = true
 
 -- Whitespace display
 vim.opt.list = true
