@@ -1,7 +1,9 @@
 /*
 !/.gitignore
 !/gitconfig
+!/listenbrainz-mpd
 !/sway
+!/swaylock
 !/waybar
 !/wofi
 !/mimeapps.list
