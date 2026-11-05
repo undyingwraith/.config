@@ -50,6 +50,9 @@ bindsym {
     # Switch to the last recently used window
     Alt+Tab exec swayr switch-to-urgent-or-lru-window
 
+    # Open wallpaper config tool
+    $mod+w exec skwd-wall-v2
+
     # Lock screen
     $mod+Alt+l exec swaylock 
 
